@@ -1,14 +1,20 @@
-const removeFromArray = function(arr, remove) {
-    let newArr = [];
-    let result = "";
-    for (remove of arr) {
-        newArr = arr - remove;
-        result = newArr.join("");
-    }
-    return result;
 
 
-};
+const removeFromArray = function(...args) {
+    let myArray = args[0];
+    let finalArr = [];
+
+    myArray.forEach(element => {
+        if (!args.includes(element)){
+            finalArr.push(element);
+        }
+    });
+
+    return myArray;
+
+
+
+}
 
 // Do not edit below this line
 module.exports = removeFromArray;
