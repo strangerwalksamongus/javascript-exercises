@@ -14,15 +14,32 @@ let sumOfAll = arrayGiven.reduce(function(previous, next) {
     return sumOfAll;
 };
 
-const multiply = function() {
-
+const multiply = function(arrayGiven) {
+  let multiplyAll = arrayGiven.reduce(function(previous, next) {
+    return previous * next;
+  }, 1)             // 1 is the initial value we start multiplying on top of
+      return multiplyAll;
 };
 
-const power = function() {
+const power = function(a, b) {
+  return Math.pow(a, b);
 	
 };
 
-const factorial = function() {
+const factorial = function(number) {
+  let result = 1;
+  if (number === 0) return 1;
+  else if (number > 0) {
+    for (let i = 1; i <= number; i++) {
+      result *= i;
+    }
+    return result;
+  }
+
+
+
+
+
 	
 };
 
