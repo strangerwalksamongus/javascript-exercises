@@ -7,7 +7,9 @@ const findTheOldest = function(people) {
         }
         else return olderPerson;
 
-    })                  // LOOK OVER AGAIN //
+    })                  /*
+                        READ UNTIL IT MAKES SENSE!!!
+                        */
     
 };
 
