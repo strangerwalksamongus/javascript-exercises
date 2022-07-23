@@ -7,12 +7,12 @@ const findTheOldest = function(people) {
         }
         else return olderPerson;
 
-    })                  /// DOESNT FUCKING WOTK
+    })                  // LOOK OVER AGAIN //
     
 };
 
 let findAge = function(born, died) {
-    if (died !== true) {
+    if (died == undefined) {
         died = new Date().getFullYear();
     }
     return died - born;
